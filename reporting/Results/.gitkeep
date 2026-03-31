@@ -1,0 +1,2 @@
+# This file ensures the Results directory is tracked in version control
+# while .gitignore excludes actual generated files

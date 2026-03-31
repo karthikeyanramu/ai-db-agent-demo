@@ -1,0 +1,13 @@
+# AI Database Agent Platform - Python Dependencies
+
+# Core LLM Framework
+langchain-community>=0.0.1
+
+# Local LLM Runtime
+ollama>=0.1.0
+
+# Database
+sqlite3  # Usually pre-installed with Python
+
+# Optional: For enhanced functionality
+jinja2>=3.0.0  # For report templates (if needed)
