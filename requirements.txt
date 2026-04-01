@@ -1,13 +1,36 @@
 # AI Database Agent Platform - Python Dependencies
-
+# 
+# Installation Instructions:
+# ============================
+# 1. Create a virtual environment (recommended):
+#    python -m venv venv
+#    
+# 2. Activate the virtual environment:
+#    Windows:  venv\Scripts\activate
+#    macOS/Linux: source venv/bin/activate
+#
+# 3. Install all dependencies:
+#    pip install -r requirements.txt
+#
+# 4. Setup Ollama (required for LLM functionality):
+#    - Download from: https://ollama.ai
+#    - Install and run: ollama serve
+#    - Pull the model: ollama pull llama3
+#
 # Core LLM Framework
 langchain-community>=0.0.1
+langchain>=0.1.0
 
 # Local LLM Runtime
 ollama>=0.1.0
 
 # Database
-sqlite3  # Usually pre-installed with Python
+# sqlite3 is built-in with Python, no installation needed
 
-# Optional: For enhanced functionality
-jinja2>=3.0.0  # For report templates (if needed)
+# Reporting and Visualization
+matplotlib>=3.5.0  # For charts and graphs in reports
+jinja2>=3.0.0     # For HTML report templates
+
+# Testing (if not already installed)
+pytest>=7.0.0     # For running unit tests
+pytest-cov>=4.0.0 # For coverage reports

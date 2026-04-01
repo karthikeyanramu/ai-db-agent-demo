@@ -441,4 +441,5 @@ logger.info("All testing completed successfully")
 # =====================================================
 # GENERATE REPORT
 # =====================================================
-generate_report(results)
+execution_time = metrics_tracker.overall_metrics.results.get("execution_time", None)
+report_path = generate_report(results, execution_time)
